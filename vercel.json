@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/presentation/index.html" },
+    { "source": "/style.css", "destination": "/presentation/style.css" },
+    { "source": "/script.js", "destination": "/presentation/script.js" },
+    { "source": "/assets/:match*", "destination": "/presentation/assets/:match*" }
+  ]
+}
