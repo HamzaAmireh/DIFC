@@ -410,3 +410,138 @@ li::before {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 }
+/* IA Visual (Tree) */
+.tree-visual {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: white;
+}
+
+.tree-deep .node-root {
+    background: #00324D;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.tree-deep .branch {
+    margin-left: 2rem;
+    border-left: 2px solid #ccc;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.tree-deep .node {
+    background: #f0f0f0;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.tree-flat .node-root {
+    background: var(--primary-teal);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto 1rem;
+}
+
+.tree-flat .flat-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 2px solid var(--primary-teal);
+    padding-top: 1rem;
+}
+
+.tree-flat .node-hub {
+    background: white;
+    border: 1px solid var(--primary-teal);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-teal);
+}
+
+.tree-flat .flat-pages {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tree-flat .node-page {
+    font-size: 0.8rem;
+    color: #666;
+    background: #f9f9f9;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+}
+
+/* Roadmap Timeline */
+.timeline-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.timeline-phase {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.timeline-phase .phase-header {
+    background: var(--deep-navy);
+    color: white;
+    padding: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.timeline-phase:nth-child(3) .phase-header { /* Middle phase */
+    background: var(--primary-teal);
+}
+.timeline-phase:nth-child(5) .phase-header { /* Last phase */
+    background: var(--gold);
+    color: var(--deep-navy);
+}
+
+.timeline-phase .phase-content {
+    padding: 1rem;
+}
+
+.timeline-phase ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.timeline-phase li {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-phase li:last-child {
+    border-bottom: none;
+}
+
+.timeline-arrow {
+    align-self: center;
+    font-size: 2rem;
+    color: #ccc;
+    font-weight: bold;
+}
